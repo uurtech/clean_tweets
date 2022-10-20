@@ -1,3 +1,3 @@
 //cellInnerDiv our selector
-const elements = document.querySelectorAll('[data-id="cellInnerDiv"]');
+const elements = document.querySelectorAll('[data-testid="cellInnerDiv="cellInnerDiv"]');
 console.log(elements)
