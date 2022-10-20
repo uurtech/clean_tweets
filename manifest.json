@@ -1,0 +1,14 @@
+{
+  "name": "Clean Tweets!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "author": "Uğur Kazdal",
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://twitter.com/*"
+      ]
+    }
+  ]
+}
