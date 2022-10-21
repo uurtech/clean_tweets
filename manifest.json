@@ -3,12 +3,19 @@
   "version": "1.0",
   "manifest_version": 3,
   "author": "Uğur Kazdal",
+  "background": {
+    "service_worker":"scripts/background.js"
+  },
   "content_scripts": [
     {
       "js": ["scripts/content.js"],
       "matches": [
-        "https://twitter.com/*"
+        "https://twitter.com/search*",
+        "https://twitter.com/explore*"
       ]
     }
+  ],
+  "permissions": [
+    "tabs"
   ]
 }
